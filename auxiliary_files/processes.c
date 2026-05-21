@@ -56,14 +56,14 @@ static void print_algo_details(const Process *p) {
 
 // Imprime os eventos de criação, execução, preempção e finalização dos processos.
 void print_process_event(const char *event, int current_time, const Process *p, int run_time) {
-    printf("[T=%03d] %s pid=%d", current_time, event, p->pid);
+    printf("[T=%03d] %-7s | pid=%-4d", current_time, event, p->pid);
 
     if (strcmp(event, "CREATE") == 0) {
-        printf(" | total_exec_time=%d", p->exec_time);
+        printf(" | total_t=%-4d", p->exec_time);
     } else if (strcmp(event, "RUN") == 0) {
-        printf(" | remaining_exec_time=%d | CPU_slice=%d", p->remaining_time, run_time);
+        printf(" | remaining_t=%-4d | cpu_slice=%-3d", p->remaining_time, run_time);
     } else if (strcmp(event, "PREEMPT") == 0) {
-        printf(" | remaining_exec_time=%d", p->remaining_time);
+        printf(" | remaining_t=%-4d", p->remaining_time);
     }
 
     print_algo_details(p);
