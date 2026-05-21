@@ -1,5 +1,5 @@
 #include "round_robin.h"
-#include "../Auxiliary_Files/processes.h"
+#include "../auxiliary_files/processes.h"
 
 // Variável estática para manter o índice do último processo escalonado
 static int last_rr_index = -1;

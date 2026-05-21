@@ -1,5 +1,5 @@
 #include "priority.h"
-#include "../Auxiliary_Files/processes.h"
+#include "../auxiliary_files/processes.h"
 
 // Seleciona o processo com maior prioridade.
 int get_next_priority(int current_time) {

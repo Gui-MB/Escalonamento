@@ -5,23 +5,23 @@ Este projeto implementa um simulador de escalonamento de processos em C. Ele lê
 ## Estrutura do projeto
 
 - `main.c`: ponto de entrada, carrega a entrada e aciona as simulações.
-- `Auxiliary_Files/`: utilitários comuns (definição dos processos e da árvore rubro-negra).
-- `Scheduler_Algorithms/`: implementações dos algoritmos de escalonamento.
-- `Input_Files/`: arquivos de entrada e gerador.
+- `auxiliary_files/`: utilitários comuns (definição dos processos e da árvore rubro-negra).
+- `scheduler_algorithms/`: implementações dos algoritmos de escalonamento.
+- `input_files/`: gerador de entradas.
 
 ## Como compilar e executar
 Na raiz do projeto:
 
 ```bash
-gcc main.c Auxiliary_Files/processes.c Auxiliary_Files/red_and_black_tree.c Scheduler_Algorithms/*.c -o escalonador
+gcc main.c auxiliary_files/processes.c auxiliary_files/red_and_black_tree.c scheduler_algorithms/*.c -o escalonador
 ./escalonador
 ```
 
 ## Arquivo de entrada
 
-O simulador lê os processos do arquivo em `Input_Files/entradaEscalonador.txt`. Cada linha representa um processo com seus atributos.
+O simulador lê os processos do arquivo em `entradaEscalonador.txt`. Cada linha representa um processo com seus atributos.
 
-Para gerar entradas novas, use `Input_Files/geradorEntrada.py`.
+Para gerar entradas novas, use `input_files/geradorEntrada.py` (o arquivo será gerado na raiz do projeto).
 
 ## Algoritmos implementados
 

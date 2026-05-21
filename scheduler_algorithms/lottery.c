@@ -1,6 +1,6 @@
 #include "lottery.h"
 #include <stdlib.h>
-#include "../Auxiliary_Files/processes.h"
+#include "../auxiliary_files/processes.h"
 
 // Sorteia um processo proporcional aos seus bilhetes (prioridade).
 int get_next_lottery(int current_time) {

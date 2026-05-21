@@ -1,7 +1,7 @@
 #include "cfs.h"
 #include <stddef.h>
-#include "../Auxiliary_Files/processes.h"
-#include "../Auxiliary_Files/red_and_black_tree.h"
+#include "../auxiliary_files/processes.h"
+#include "../auxiliary_files/red_and_black_tree.h"
 
 // Seleciona o processo pronto com menor vruntime.
 int get_next_cfs(int current_time) {

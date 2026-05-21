@@ -3,13 +3,13 @@
 #include <string.h>
 #include <time.h>
 
-#include "Auxiliary_Files/processes.h"
-#include "Scheduler_Algorithms/cfs.h"
-#include "Scheduler_Algorithms/lottery.h"
-#include "Scheduler_Algorithms/priority.h"
-#include "Scheduler_Algorithms/round_robin.h"
+#include "auxiliary_files/processes.h"
+#include "scheduler_algorithms/cfs.h"
+#include "scheduler_algorithms/lottery.h"
+#include "scheduler_algorithms/priority.h"
+#include "scheduler_algorithms/round_robin.h"
 
-#define INPUT_FILE "Input_Files/entradaEscalonador.txt"
+#define INPUT_FILE "entradaEscalonador.txt"
 
 int main(void) {
 	srand((unsigned)time(NULL));
