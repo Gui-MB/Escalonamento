@@ -70,12 +70,13 @@ void read_input_file(const char *filename) {
                &processes[num_processes].exec_time,
                &processes[num_processes].priority);
 
-        // Inicializa campos extras para cada processo: remaining_time|vruntime|is_completed|creation_announced|in_cfs_tree
+        // Inicializa campos extras para cada processo: remaining_time|vruntime|is_completed|creation_announced|in_cfs_tree|in_priority_heap
         processes[num_processes].remaining_time = processes[num_processes].exec_time;
         processes[num_processes].vruntime = 0;
         processes[num_processes].is_completed = 0;
         processes[num_processes].creation_announced = 0;
         processes[num_processes].in_cfs_tree = 0;
+        processes[num_processes].in_priority_heap = 0;
         num_processes++;
     }
     fclose(file);

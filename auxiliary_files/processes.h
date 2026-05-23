@@ -15,6 +15,7 @@ typedef struct {
     int is_completed;
     int creation_announced;
     int in_cfs_tree;
+    int in_priority_heap;
 } Process;
 
 extern Process processes[MAX_PROCESSES];

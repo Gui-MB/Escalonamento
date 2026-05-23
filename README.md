@@ -11,6 +11,7 @@ Este projeto implementa um simulador de escalonamento de processos em C. Ele lê
 - `input_generator/`: contém o arquivo gerador de entradas.
 
 ## Como compilar e executar
+
 Na raiz do projeto:
 
 ```bash
@@ -32,6 +33,7 @@ Para gerar entradas novas, use `input_files/geradorEntrada.py` (o arquivo será 
 - **CFS** (`cfs.c`).
 
 ## Funcionamento (visão geral)
+
 1. O programa lê todos os processos de `entradaEscalonador.txt`.
 2. Cada processo é inserido nas estruturas internas.
 3. A simulação avança em passos de tempo, selecionando o próximo processo a executar conforme o algoritmo.
@@ -41,6 +43,7 @@ Para gerar entradas novas, use `input_files/geradorEntrada.py` (o arquivo será 
 ## Saída
 
 Os resultados são exibidos no terminal. Em geral, a saída inclui:
+
 - o algoritmo escolhido e o quantum,
 - a ordem de execução dos processos ao longo do tempo,
 - tempos de latência e espera por processo,
@@ -49,7 +52,9 @@ Os resultados são exibidos no terminal. Em geral, a saída inclui:
 ## Observações sobre IA
 
 A IA foi utilizada para:
+
 - preencher e revisar as informações dos arquivos .h
 - criar a função `log_printf()`
 - implementar a estrutura de dados da árvore vermelho e preta
+- implementar a estrutura de dados heap minímo
 - auxiliar na escrita do arquivo README.md
